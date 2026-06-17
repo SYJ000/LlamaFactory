@@ -745,5 +745,23 @@
       "prompt": "content"
     },
     "folder": "python"
+  },
+  "company_extract_train": {
+    "file_name": "train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "instruction": "instruction",
+      "input": "input",
+      "output": "output"
+    }
+  },
+  "company_extract_val": {
+    "file_name": "val.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "instruction": "instruction",
+      "input": "input",
+      "output": "output"
+    }
   }
 }
