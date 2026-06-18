@@ -1,8 +1,8 @@
 import torch
-from transformers import FlaxAutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
-base_model = FlaxAutoModelForCausalLM.from_pretrained(
+base_model = AutoModelForCausalLM.from_pretrained(
     "/data1/lora_finetune/models/Qwen2.5-7B",
     torch_dtype=torch.float16,
     device_map="cuda:7"
